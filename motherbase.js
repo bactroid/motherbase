@@ -32,6 +32,9 @@ const makePropArray = (obj, path) =>
     ? obj
     : createNestedObj(path, [getDeepProp(obj, path)])
 
+// range :: Number -> Number -> [Number]
+const range = (start, end) => Array(parseInt(end) - parseInt(start) + 1).fill().map((x, i) => i + start)
+
 module.exports = {
   first,
   flatten,
@@ -39,5 +42,6 @@ module.exports = {
   getDeepProp,
   createObj,
   createNestedObj,
-  makePropArray
+  makePropArray,
+  range
 }

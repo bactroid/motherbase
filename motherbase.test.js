@@ -81,3 +81,8 @@ test('makePropArray', assert => {
   assert.deepEqual(actual, expected, 'makePropArray should verify whether an object property is an array, and if not, return a new object changing that property into a single-item array')
   assert.end()
 })
+
+test('range', assert => {
+  assert.deepEqual(mb.range(1, 5), [1, 2, 3, 4, 5], 'range should generate an array of Numbers starting with min and ending with max')
+  assert.end()
+})
