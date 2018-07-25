@@ -33,3 +33,7 @@ Returns a new nested object matching the path provided, setting the value of the
 ### `makePropArray(obj, path)`
 
 Verifies whether an object property is an array, and if not, returns a new object changing that property into a single-item array.
+
+### `range(min, max)`
+
+Generates an array of Number values starting at `min` and ending at `max` with a step value of 1.
