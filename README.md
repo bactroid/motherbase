@@ -18,6 +18,10 @@ Flattens an array to one level.
 
 Returns an array representing the set difference between two arrays.
 
+### `intersection(a)(b)`
+
+Returns an array representing the intersection between two arrays.
+
 ### `getDeepProp(obj, path)`
 
 Returns the value of an object property path from an object.

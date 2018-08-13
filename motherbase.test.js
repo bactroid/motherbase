@@ -27,6 +27,13 @@ test('setDifference', assert => {
   assert.end()
 })
 
+test('intersection', assert => {
+  const xs = [1, 2, 3, 4]
+  const ys = [3, 4, 5, 6]
+  assert.deepEqual(mb.intersection(xs)(ys), [3, 4])
+  assert.end()
+})
+
 test('getDeepProp', assert => {
   const obj = {
     birth: {

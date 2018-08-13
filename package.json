@@ -1,6 +1,6 @@
 {
   "name": "motherbase",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A handy collection of functions I might want to reuse.",
   "main": "motherbase.js",
   "scripts": {

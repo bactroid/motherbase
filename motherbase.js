@@ -10,6 +10,9 @@ const setDifference = (a, b) => {
   return a.filter(x => !set.has(x))
 }
 
+// intersection :: [a] -> [a] -> [a]
+const intersection = xs => ys => xs.filter(x => ys.find(y => y === x) !== undefined)
+
 // getDeepProp :: Object -> String -> a
 const getDeepProp = (obj, path) =>
   path
@@ -39,6 +42,7 @@ module.exports = {
   first,
   flatten,
   setDifference,
+  intersection,
   getDeepProp,
   createObj,
   createNestedObj,
